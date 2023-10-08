@@ -10,6 +10,8 @@ private:
 
 public:
     Author(int author_id, std::string author_name);
+    Author(const Author& other);
+    ~Author();
     void display();
 };
 

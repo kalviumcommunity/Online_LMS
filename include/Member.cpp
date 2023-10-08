@@ -8,6 +8,10 @@ Member::Member(int id, std::string name, std::string email, std::string password
     this->password = password;
 }
 
+Member::~Member() {
+    std::cout << "Member Destructor called" << std::endl;
+}
+
 void Member::Login() {
    
 }

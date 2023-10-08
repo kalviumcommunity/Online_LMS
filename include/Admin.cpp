@@ -6,6 +6,10 @@ Admin::Admin(int id, std::string name, std::string email, std::string password) 
     this->email = email;
     this->password = password;
 }
+
+Admin::~Admin(){
+    std::cout << "Admin Destructor called" << std::endl;
+}
 void Admin:: Login() {
 
 }

@@ -13,6 +13,8 @@ int main() {
     Admin admin1(1, "admin", "admin@gmail.com", "adminpass");
     Member member1(2, "member", "member@gmail.com", "memberpass");
     author1.display();
+    Author author2(author1);
+    author2.display();
 
     // To be implemented in future milestones
     return 0;
