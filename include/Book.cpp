@@ -18,3 +18,7 @@ void Book::ReturnBook() {
 void Book::getBookCount() {
     std::cout << "Total number of Books: " << book_count << std::endl; 
 }
+
+bool Book::isAvailable() const {
+    return available_quantity > 0;
+}
