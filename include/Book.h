@@ -1,9 +1,10 @@
 #ifndef Book_H
 #define Book_H
 
+#include "Item.h"
 #include "Author.h"
 
-class Book {
+class Book : public Item {
 private:
     int book_id;
     std::string title;
@@ -18,6 +19,7 @@ public:
     void BorrowBook();
     void ReturnBook();
     static void getBookCount();
+    bool isAvailable() const override;
 };
 
 #endif
